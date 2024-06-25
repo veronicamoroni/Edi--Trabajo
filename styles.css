@@ -1,0 +1,17 @@
+    /* Estilos personalizados para la barra de navegación */
+    .navbar-custom {
+      background-color: #004085; /* Color de fondo azul */
+        background-size: cover;
+    }
+    .navbar-custom .navbar-brand img {
+      width: 100px; /* Tamaño del logo */
+    }
+    body {
+      background-image: url('imagen.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed; /
+    }
+
