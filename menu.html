@@ -3,103 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automotion</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <h1>AUTOMOTION - Gestión de Servicios de Vehículos</h1>
-        <nav>
-            <ul>
-                <li><a href="#clientes">Clientes</a></li>
-                <li><a href="#vehiculos">Vehículos</a></li>
-                <li><a href="#turnos">Turnos</a></li>
-                <li><a href="#facturacion">Facturación</a></li>
-            </ul>
-        </nav>
+    <header class="bg-success text-white py-4">
+        <div class="container text-center">
+            <h1>AUTOMOTION - Gestión de Servicios de Vehículos</h1>
+        </div>
+        <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#tab-clientes">Clientes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-vehiculos">Vehículos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-turnos">Turnos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-facturacion">Facturación</a>
+            </li>
+        </ul>
     </header>
-    <main>
-        <section id="clientes">
-            <h2>Clientes</h2>
-            <form>
-                <label for="dni">DNI:</label>
-                <input type="text" id="dni" name="dni" required>
+    <main class="container mt-4">
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="tab-clientes">
+                <section id="clientes">
+                    <h2 class="text-success mb-4">Clientes</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="buscar-cliente">Buscar Cliente:</label>
+                            <div class="input-group">
+                                <input type="text" id="buscar-cliente" name="buscar-cliente" class="form-control" placeholder="Ingrese nombre o DNI">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button">Buscar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="dni">DNI:</label>
+                            <input type="text" id="dni" name="dni" class="form-control" required>
+                        </div>
 
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" required>
+                        </div>
 
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required>
+                        <div class="form-group">
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" class="form-control" required>
+                        </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
 
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" class="form-control" required>
+                        </div>
 
-                <button type="submit">Guardar</button>
-            </form>
-        </section>
+                        <button type="submit" class="btn btn-primary btn-sm">Guardar</button>
+                    </form>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="tab-vehiculos">
+                <section id="vehiculos">
+                    <h2 class="text-success mb-4">Vehículos</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="buscar-cliente">Buscar Vehiculo:</label>
+                            <div class="input-group">
+                                <input type="text" id="buscar-vehiculo" name="buscar-vehiculo" class="form-control" placeholder="Ingresar patente">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button">Buscar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="marca">Marca:</label>
+                            <input type="text" id="marca" name="marca" class="form-control" required>
+                        </div>
 
-        <section id="vehiculos">
-            <h2>Vehículos</h2>
-            <form>
-                <label for="marca">Marca:</label>
-                <input type="text" id="marca" name="marca" required>
+                        <div class="form-group">
+                            <label for="modelo">Modelo:</label>
+                            <input type="text" id="modelo" name="modelo" class="form-control" required>
+                        </div>
 
-                <label for="modelo">Modelo:</label>
-                <input type="text" id="modelo" name="modelo" required>
+                        <div class="form-group">
+                            <label for="año">Año:</label>
+                            <input type="number" id="año" name="año" class="form-control" required>
+                        </div>
 
-                <label for="año">Año:</label>
-                <input type="number" id="año" name="año" required>
+                        <div class="form-group">
+                            <label for="placa">Placa:</label>
+                            <input type="text" id="placa" name="placa" class="form-control" required>
+                        </div>
 
-                <label for="placa">Placa:</label>
-                <input type="text" id="placa" name="placa" required>
+                        <button type="submit" class="btn btn-primary btn-sm">Guardar</button>
+                    </form>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="tab-turnos">
+                <section id="turnos">
+                    <div class="form-group">
+                        <label for="buscar-cliente">Buscar</label>
+                        <div class="input-group">
+                            <input type="text" id="buscar" name="buscar" class="form-control" placeholder="Ingresar patente">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="text-success mb-4">Turnos</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="cliente">Cliente:</label>
+                            <input type="text" id="cliente" name="cliente" class="form-control" required>
+                        </div>
 
-                <button type="submit">Guardar</button>
-            </form>
-        </section>
+                        <div class="form-group">
+                            <label for="vehiculo">Vehículo:</label>
+                            <input type="text" id="vehiculo" name="vehiculo" class="form-control" required>
+                        </div>
 
-        <section id="turnos">
-            <h2>Turnos</h2>
-            <form>
-                <label for="cliente">Cliente:</label>
-                <input type="text" id="cliente" name="cliente" required>
+                        <div class="form-group">
+                            <label for="fecha">Fecha:</label>
+                            <input type="date" id="fecha" name="fecha" class="form-control" required>
+                        </div>
 
-                <label for="vehiculo">Vehículo:</label>
-                <input type="text" id="vehiculo" name="vehiculo" required>
+                        <div class="form-group">
+                            <label for="hora">Hora:</label>
+                            <input type="time" id="hora" name="hora" class="form-control" required>
+                        </div>
 
-                <label for="fecha">Fecha:</label>
-                <input type="date" id="fecha" name="fecha" required>
+                        <button type="submit" class="btn btn-primary btn-sm">Guardar</button>
+                    </form>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="tab-facturacion">
+                <section id="facturacion">
+                    <h2 class="text-success mb-4">Facturación</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="cliente-factura">Cliente:</label>
+                            <input type="text" id="cliente-factura" name="cliente-factura" class="form-control" required>
+                        </div>
 
-                <label for="hora">Hora:</label>
-                <input type="time" id="hora" name="hora" required>
+                        <div class="form-group">
+                            <label for="vehiculo-factura">Vehículo:</label>
+                            <input type="text" id="vehiculo-factura" name="vehiculo-factura" class="form-control" required>
+                        </div>
 
-                <button type="submit">Guardar</button>
-            </form>
-        </section>
+                        <div class="form-group">
+                            <label for="monto">Monto:</label>
+                            <input type="number" id="monto" name="monto" class="form-control" required>
+                        </div>
 
-        <section id="facturacion">
-            <h2>Facturación</h2>
-            <form>
-                <label for="cliente-factura">Cliente:</label>
-                <input type="text" id="cliente-factura" name="cliente-factura" required>
+                        <div class="form-group">
+                            <label for="fecha-factura">Fecha:</label>
+                            <input type="date" id="fecha-factura" name="fecha-factura" class="form-control" required>
+                        </div>
 
-                <label for="vehiculo-factura">Vehículo:</label>
-                <input type="text" id="vehiculo-factura" name="vehiculo-factura" required>
+                        <button type="submit" class="btn btn-primary btn-sm">Guardar</button>
+                    </form>
+                </section>
+            </div>
+        </div>
 
-                <label for="monto">Monto:</label>
-                <input type="number" id="monto" name="monto" required>
-
-                <label for="fecha-factura">Fecha:</label>
-                <input type="date" id="fecha-factura" name="fecha-factura" required>
-
-                <button type="submit">Guardar</button>
-            </form>
-        </section>
+        <a href="index.html" class="btn btn-primary btn-block btn-sm mt-4">Volver al Menú Principal</a>
     </main>
-    <footer>
+    
+    <footer class="bg-success text-white text-center py-3 fixed-bottom">
         <p>&copy; 2024 Gestión de Servicios de Vehículos AUTOMOTION.</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
