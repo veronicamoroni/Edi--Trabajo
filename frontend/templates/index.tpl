@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Automotion</title>
   
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Enlace a tu archivo CSS personalizado -->
   <style>
-    /* Estilos personalizados para la barra de navegación */
-    .navbar-custom {
+
+      .navbar-custom {
       background-color: #004085; /* Color de fondo azul */
         background-size: cover;
     }
@@ -25,14 +25,11 @@
       background-attachment: fixed; /
     }
 
-    @font-face {
-      font-family: 'CustomFont';
-      src: url('ruta/a/tu/fuente.ttf') format('truetype'); /* Reemplaza con la ruta de tu fuente personalizada */
-    }
+   
     
     .custom-font {
-      font-family: 'CustomFont', sans-serif; /* Aplica la fuente personalizada */
-      /* Otras propiedades de estilo */
+      font-family: 'CustomFont', sans-serif; 
+      
     }
     </style>
 </head>
@@ -40,7 +37,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
     <a class="navbar-brand" href="#">
-      <img src="Logo.png" alt="Logo">
+      <img src="\frontend\imagenes\logo.png" alt="Logo">
     </a>
     <div class="mx-auto">
       <h1 class="text-center text-white custom-font">Automotion</h1>

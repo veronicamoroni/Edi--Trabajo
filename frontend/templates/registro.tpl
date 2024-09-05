@@ -6,8 +6,9 @@
   <title>Registro - Automotion</title>
   <!-- Enlace a Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
    <style>
-    /* Estilos personalizados para la barra de navegación */
+   
     .navbar-custom {
       background-color: #004085; /* Color de fondo azul */
         background-size: cover;
@@ -24,15 +25,7 @@
       background-attachment: fixed; /
     }
 
-    @font-face {
-      font-family: 'CustomFont';
-      src: url('ruta/a/tu/fuente.ttf') format('truetype'); /* Reemplaza con la ruta de tu fuente personalizada */
-    }
     
-    .custom-font {
-      font-family: 'CustomFont', sans-serif; /* Aplica la fuente personalizada */
-      /* Otras propiedades de estilo */
-    }
     </style>
 </head>
 <body>
