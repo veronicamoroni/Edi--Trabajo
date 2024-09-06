@@ -1,4 +1,28 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 5.4.0, created on 2024-09-05 21:42:32
+  from 'file:index.tpl' */
+
+/* @var \Smarty\Template $_smarty_tpl */
+if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
+  'version' => '5.4.0',
+  'unifunc' => 'content_66da09a8dc80d0_53506217',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '42cbc628a645f3b682e089602301ab1b9377a723' => 
+    array (
+      0 => 'index.tpl',
+      1 => 1725565295,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+))) {
+function content_66da09a8dc80d0_53506217 (\Smarty\Template $_smarty_tpl) {
+$_smarty_current_dir = 'C:\\xampp\\htdocs\\automotion\\frontend\\templates';
+?><!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -71,8 +95,16 @@
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <?php echo '<script'; ?>
+ src="https://code.jquery.com/jquery-3.5.1.slim.min.js"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"><?php echo '</script'; ?>
+>
 </body>
 </html>
+<?php }
+}

@@ -1,5 +1,5 @@
 <?php
-// Incluye el archivo principal de Smarty. 
+
 require_once ('C:\xampp\htdocs\automotion\frontend\libs\Smarty.class.php');
 require_once ('C:\xampp\htdocs\automotion\configs\conexion.php');     // Configuración de base de datos
 
